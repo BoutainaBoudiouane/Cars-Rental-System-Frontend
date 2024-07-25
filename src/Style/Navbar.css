@@ -1,0 +1,126 @@
+.brand {
+    font-weight: bold;
+    font-size: 20px; }
+  
+  .site-header {
+    position: sticky;
+    background-color:#123456;
+    height: 80px;
+    box-shadow: #100dde;
+    z-index: 999;
+    }
+  
+  .site-header__wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 50px; }
+    @media (min-width: 1200px) {
+      .site-header__wrapper {
+        padding-top: 0;
+        padding-bottom: 0; } }
+  @media (max-width: 1200px) {
+    .site-header__end {
+      padding-right: 4rem;
+    padding-bottom: 100px; } }
+  
+  @media (min-width: 660px) {
+    .nav__wrapper {
+      display: flex; } }
+  
+  @media (max-width: 800px) {
+    .nav__wrapper {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      left: 0;
+      height: 100px;
+      z-index: -1;
+      background-color: #09a8d8;
+      visibility: hidden;
+      opacity: 0;
+      transform: translateY(-100%);
+      transition: transform 0.3s ease-out, opacity 0.3s ease-out; }
+      .nav__wrapper.active {
+        visibility: visible;
+        color: #d92abf;
+        opacity: 1;
+        transform: translateY(0); } }
+  
+  .nav__item a {
+    display: block;
+    padding: 1.5rem 1rem;
+    list-style: none; 
+}
+.nav__item  {
+    display: block;
+    padding: 1.5rem 1rem;
+    list-style: none; 
+}
+  .nav__toggle {
+    display: none; }
+    @media (max-width: 1200px) {
+      .nav__toggle {
+        display: block;
+        position: absolute;
+        right: 1rem;
+        top: 1rem; } }
+        .nav__item a {
+            position: relative;
+            display: block;
+            padding: 1.5rem 1rem;
+            color: #d92abf;
+            text-decoration: none;
+          }
+          
+          .nav__item a::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            color: #d92abf;
+            background-color: #d92abf;
+            transition: width 0.3s ease;
+          }
+          
+          .nav__item a:hover::after {
+            width: 100%;
+            color: #d92abf;
+          }
+          .nav__item a:hover{
+            color: lightpink;
+          }
+          
+  
+  
+
+.logo{
+    width: 100px;
+    height: 120px;
+    padding-bottom: 30px;
+}  
+.pink-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:#d92abf;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  .pink-button:hover {
+    background-color: lightpink;
+  }
+  .site-header__end {
+    padding-right: 4rem;
+  padding-bottom: 50px; } 
+  #pink-button{
+    padding: 10px 10px;
+    background-color:#d92abf;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+  }

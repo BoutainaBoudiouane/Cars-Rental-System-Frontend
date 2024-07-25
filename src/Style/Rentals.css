@@ -1,0 +1,51 @@
+.rentals-container {
+  height: 100%;
+  overflow: auto;
+}
+
+
+.rental-item {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.rental-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.rental-header h4 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.rental-icon {
+  margin-right: 10px;
+  color: #3366cc;
+}
+
+.rental-details {
+  margin-bottom: 10px;
+}
+
+.rental-details > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.rental-details > div p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.rental-details > div .rental-icon {
+  margin-right: 8px;
+  color: #999999;
+}
+
